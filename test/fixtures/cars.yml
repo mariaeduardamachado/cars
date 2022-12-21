@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  chave: MyString
+  modelo: MyString
+  marca: MyString
+  ano: MyString
+  ano_modelo: MyString
+
+two:
+  chave: MyString
+  modelo: MyString
+  marca: MyString
+  ano: MyString
+  ano_modelo: MyString
