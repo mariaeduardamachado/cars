@@ -1,0 +1,51 @@
+<%= form_with model: car do |form| %>
+  <div>
+    <%= form.label :chave %><br>
+    <%= form.text_field :chave %>
+    <% @car.errors.full_messages_for(:chave).each do |message| %>
+    <div><%= message %></div>
+    <% end %>
+  </div>
+
+  <div>
+    <%= form.label :marca %><br>
+    <%= form.text_field :marca %>
+    <% @car.errors.full_messages_for(:marca).each do |message| %>
+    <div><%= message %></div>
+    <% end %>
+  </div>
+
+  <div>
+    <%= form.label :modelo %><br>
+    <%= form.text_field :modelo %>
+    <% @car.errors.full_messages_for(:modelo).each do |message| %>
+    <div><%= message %></div>
+    <% end %>
+  </div>
+
+  <div>
+    <%= form.label :ano %><br>
+    <%= form.text_field :ano %>
+    <% @car.errors.full_messages_for(:ano).each do |message| %>
+    <div><%= message %></div>
+    <% end %>
+  </div>
+
+  <div>
+    <%= form.label :ano_modelo %><br>
+    <%= form.text_field :ano_modelo %>
+    <% @car.errors.full_messages_for(:ano_modelo).each do |message| %>
+    <div><%= message %></div>
+    <% end %>  
+  </div>
+
+ <div>
+  <%= form.label :status %><br>
+  <%= form.select :status, ['public', 'private', 'archived'], selected: 'public' %>
+</div>
+  
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
+

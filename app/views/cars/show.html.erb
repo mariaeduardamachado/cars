@@ -1,0 +1,16 @@
+<h1><%= @car.chave %></h1>
+<h1><%= @car.marca %></h1>
+<h1><%= @car.modelo %></h1>
+<h1><%= @car.ano %></h1>
+<h1><%= @car.ano_modelo%></h1>
+
+
+<ul>
+  <li><%= link_to "Edit", edit_car_path(@car) %></li>
+  <li><%= link_to "Destroy", car_path(@car), data: {
+                    turbo_method: :delete,
+                    turbo_confirm: "Are you sure?"
+                  } %></li>
+</ul>
+
+

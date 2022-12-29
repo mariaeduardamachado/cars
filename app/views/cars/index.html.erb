@@ -1,1 +1,18 @@
+<h1>Car</h1>
+
+
+<ul>
+  <% @cars.each do |car| %>
+  <% unless car.archived? %>
+    <li>
+      <%= link_to car.chave, car %>
+      <%= link_to car.modelo, car %>
+      <%= link_to car.ano, car %>
+      <%= link_to car.ano_modelo, car %>
+    </li>
+  <% end %>
+<% end %>  
+</ul>
+
+<%= link_to "New car", new_car_path %>
 
